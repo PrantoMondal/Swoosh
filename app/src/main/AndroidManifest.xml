@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Swoosh">
         <activity
+            android:name=".SkillActivity"
+            android:exported="false" />
+        <activity
             android:name=".BaseActivity"
             android:exported="false" />
         <activity
@@ -23,7 +26,7 @@
         </activity>
         <activity
             android:name=".LeagueActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
