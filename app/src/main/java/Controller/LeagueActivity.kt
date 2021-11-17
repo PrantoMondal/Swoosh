@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.prantokm.swoosh.EXTRA_PLAYER
 import com.prantokm.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
@@ -39,7 +38,7 @@ class LeagueActivity : BaseActivity() {
     fun leagueNextClicked(view: View){
         if (player.league != ""){
             val skillActivity = Intent(this, SkillActivity::class.java)
-            skillActivity.putExtra(EXTRA_PLAYER,player)
+            skillActivity.putExtra()
             startActivity(skillActivity)
         }
         else{
